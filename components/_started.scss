@@ -1,0 +1,50 @@
+// GETTING STARTED 
+.getting_started {
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_top {
+        text-align: center;
+        font-size: 1.4rem;
+        padding-bottom: 3rem;
+    }
+
+    &_bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        width: 80%;
+        font-size: 1.3rem;
+        padding: 3rem -5rem 0 5rem;
+
+        .first,
+        .second,
+        .third {
+            padding: 0 3rem;
+            text-align: center;
+            
+            
+            :nth-child(1):not(a) {
+                display: inline;
+                border: 1px solid #008248;
+                font-weight: 700;
+                padding: .5rem 1rem;
+                border-radius: 50%;
+                margin: 2rem 0;
+                color: #008248;
+            }
+
+            h4 {
+                margin: 2rem 0;
+            }
+
+            a {
+                text-decoration: underline;
+                color: #008248;
+            }
+
+        }
+    }
+}

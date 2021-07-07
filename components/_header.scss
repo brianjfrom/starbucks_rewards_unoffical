@@ -1,0 +1,132 @@
+// header 
+
+$header-fontsize: 1.1rem;
+
+header {
+    display: grid;
+    grid-template-columns: 4rem 2rem repeat(4, 1fr) 4rem;
+    grid-template-rows: 4rem 3rem;
+    // padding: 2rem 0 3rem 0;
+    margin: 2rem 0 0 0;
+    // position: fixed;
+    z-index: 10;
+
+    .logo {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: row;
+        grid-column: 2 / 5;
+        // padding-bottom: 1.5rem;
+    }
+    .nav-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem;
+
+        // .rewards {
+        //     // border-bottom: 5px solid blue;
+        //     // transform: translateY(1rem);
+
+        //     &::after {
+        //         border: 15px solid blue;
+        //     }
+        // }
+        
+        p {
+            padding: 0 .5rem;
+            font-weight: bold;
+            font-size: $header-fontsize;
+            opacity: 3;
+        }
+        .sup {
+            font-size: 0.6rem;
+        }
+        
+    }
+    .nav-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: $header-fontsize;
+        margin: 0;
+        padding: 0;
+        grid-column: 6/8;
+
+        a {
+            color: #000;
+
+        }
+
+        i {
+            padding: 0 1rem;
+        }
+
+        p {
+            margin-left: 1rem;
+            padding: .1rem 1rem;
+            border: 2px solid;
+            border-radius: 20px
+        }
+        .sign_in {
+            background-color: #fff;
+            
+
+            &:hover {
+                background-color: #f1f8f6;
+            }
+        }
+
+        .join_now {
+            background-color: #000;
+            color: #fff;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+    }
+    .nav-bottom {
+        grid-row: 2;
+        background-color: #1e3932;
+        grid-column: 1 / 8;
+    
+    }
+    .bottom-nav {    
+       grid-row: 2;
+       grid-column: 3 / 5;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+
+        p {
+            font-size: $header-fontsize;
+            padding-left: 2.2rem;
+            color: #fff;
+        }
+    }
+
+}
+.active {
+    position: relative;
+    
+    
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2.2rem;
+        // left: -4px;
+        width: 80%;
+        height: .5rem;
+        background: #008248;
+    }
+}

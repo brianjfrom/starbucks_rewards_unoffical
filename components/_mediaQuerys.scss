@@ -1,0 +1,7 @@
+.favorites {
+    @include responsive(tab-land) {
+        &_bottom .flex {
+            width: 60vw;
+        }
+    }
+}
