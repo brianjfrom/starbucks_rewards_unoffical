@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 1.4rem;
 }
@@ -387,7 +388,346 @@ header .bottom-nav p {
   padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 1400px) {
+.extra {
+  padding: 5rem 0;
+}
+
+.extra_header {
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.extra_header h3 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.extra_header p {
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+
+.extra_hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 70vw;
+}
+
+.extra_hero img {
+  width: 7rem;
+  padding-bottom: 2rem;
+  cursor: pointer;
+}
+
+.extra_hero .col {
+  padding: 0 1rem;
+}
+
+.extra_hero .col h4 {
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+}
+
+.extra_hero .col p {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.extra_hero .col a {
+  color: #008248;
+  font-size: 1.1rem;
+  text-decoration: underline;
+}
+
+.payment {
+  background-color: #f3f1e7;
+  position: relative;
+}
+
+.payment img {
+  width: 8rem;
+}
+
+.payment_header {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.payment_header h3 {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.payment_header p {
+  font-size: 1.1rem;
+}
+
+.payment_area1, .payment_area2, .payment_area3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  width: 60%;
+  padding: 3rem 0;
+  border-bottom: 1px inset rgba(128, 128, 128, 0.5);
+}
+
+.payment_area1 .block1 h4,
+.payment_area1 .block2 h4,
+.payment_area1 .block3 h4, .payment_area2 .block1 h4,
+.payment_area2 .block2 h4,
+.payment_area2 .block3 h4, .payment_area3 .block1 h4,
+.payment_area3 .block2 h4,
+.payment_area3 .block3 h4 {
+  font-size: 1.5rem;
+}
+
+.payment_area1 .block1 p,
+.payment_area1 .block2 p,
+.payment_area1 .block3 p, .payment_area2 .block1 p,
+.payment_area2 .block2 p,
+.payment_area2 .block3 p, .payment_area3 .block1 p,
+.payment_area3 .block2 p,
+.payment_area3 .block3 p {
+  font-size: 1.1rem;
+}
+
+.payment .block1 h4 {
+  font-size: 1.6rem;
+}
+
+.payment .block2,
+.payment .block3 {
+  display: grid;
+  grid-template-areas: "icons head"             "icons info" "icons none";
+}
+
+.payment .block2 img,
+.payment .block3 img {
+  grid-area: icons;
+  padding-right: 2rem;
+}
+
+.payment .block2 h4,
+.payment .block3 h4 {
+  grid-area: head;
+  padding-bottom: 1rem;
+}
+
+.payment .block2 p,
+.payment .block3 p {
+  grid-area: info;
+}
+
+.payment .block2 a,
+.payment .block3 a {
+  color: #008248;
+  text-decoration: underline;
+}
+
+.payment .block2 a i,
+.payment .block3 a i {
+  font-size: .9rem;
+}
+
+.starCode {
+  margin: 0 auto;
+  width: 40vw;
+  font-family: 'nunito sans', sans-serif;
+}
+
+.starCode_header {
+  margin: 3rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.starCode_header p {
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.starCode_enter {
+  display: inline;
+  width: 100%;
+}
+
+.starCode_enter fieldset {
+  margin-top: 0.5rem;
+  height: 3rem;
+  border-radius: .75rem;
+  display: flex;
+}
+
+.starCode_enter input {
+  position: relative;
+  left: 2rem;
+  top: 5%;
+  height: 90%;
+  width: 85%;
+  border: hidden;
+}
+
+.starCode_enter input:focus-visible {
+  border: hidden;
+  outline: 0px none transparent !important;
+}
+
+.starCode_enter button {
+  margin-top: 0.5rem;
+  margin-left: 85%;
+  padding: .5rem 1rem;
+  border-radius: 1.5rem;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.starCode_noCode, .starCode_questions {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.starCode_noCode a, .starCode_questions a {
+  color: #008248;
+  text-decoration: underline;
+}
+
+.starCode_noCode p:last-of-type, .starCode_questions p:last-of-type {
+  padding-top: 1rem;
+}
+
+.finePrint {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: whitesmoke;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 3rem 15vw;
+}
+
+.finePrint_header {
+  padding-bottom: 2rem;
+}
+
+.finePrint_group {
+  display: flex;
+  gap: 5rem;
+}
+
+.finePrint_group > * {
+  flex: 1;
+}
+
+.finePrint_group .left-col > *,
+.finePrint_group .right-col > * {
+  padding-bottom: 2rem;
+}
+
+.finePrint_group a {
+  color: #008248;
+  text-decoration: underline;
+}
+
+.information .cover {
+  padding: 2rem 0;
+  border-bottom: 3px inset rgba(0, 0, 0, 0.1);
+}
+
+.information_group {
+  display: flex;
+  padding: 3rem 15vw;
+  gap: 3rem;
+}
+
+.information_group > * {
+  flex: 1;
+}
+
+.information_group > div * {
+  padding-bottom: 1rem;
+}
+
+.information .about,
+.information .career,
+.information .socialImpact,
+.information .partners,
+.information .orders {
+  display: flex;
+  flex-direction: column;
+}
+
+.information .about p,
+.information .career p,
+.information .socialImpact p,
+.information .partners p,
+.information .orders p {
+  font-size: 1.3rem;
+  padding-bottom: 2.5rem;
+}
+
+.information .about a,
+.information .career a,
+.information .socialImpact a,
+.information .partners a,
+.information .orders a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+  padding: .75rem 0;
+}
+
+.information::after {
+  content: "";
+  width: 80%;
+  height: 3px;
+  color: black;
+}
+
+.socialMedia {
+  margin: 0 auto;
+  width: 70vw;
+  font-family: 'nurito sans', sans-serif;
+  border-top: 3px inset rgba(0, 0, 0, 0.2);
+}
+
+.socialMedia .icons {
+  font-size: 2rem;
+  padding: 2.5rem 0;
+}
+
+.socialMedia .icons i {
+  padding: 0 1rem 0 0;
+}
+
+.socialMedia .misc {
+  display: flex;
+  justify-content: start;
+}
+
+.socialMedia .misc a {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.socialMedia .misc a:not(:first-of-type) {
+  padding: 0 1rem;
+}
+
+.socialMedia .misc a:first-of-type {
+  padding-right: 1rem;
+}
+
+.socialMedia .misc a:not(:last-of-type) {
+  border-right: 1px solid #000;
+}
+
+.socialMedia .copy {
+  padding: 2rem 0;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1500px) {
   .favorites_bottom .flex {
     width: 60vw;
   }

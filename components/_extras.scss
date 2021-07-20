@@ -1,0 +1,52 @@
+.extra {
+    padding: 5rem 0;
+
+    &_header {
+        text-align: center;
+        margin: 0 auto;
+        width: 50vw;
+        
+
+        h3 {
+            font-size: 1.7rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            padding-bottom: 2rem;
+        }
+    }
+    &_hero {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 70vw;
+
+        img {
+            width: 7rem;
+            padding-bottom: 2rem;
+            cursor: pointer;
+        }
+
+        .col {
+            padding: 0 1rem;
+
+            h4 {
+                font-size: 1.4rem;
+                padding-bottom: 1rem;
+            }
+            p {
+                font-size: 1.1rem;
+                padding-bottom: 1rem;
+            }
+            a {
+                color: #008248;
+                font-size: 1.1rem;
+                text-decoration: underline;
+            }
+        }
+    }
+
+}

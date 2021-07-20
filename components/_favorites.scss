@@ -1,0 +1,64 @@
+.favorites {
+
+    &_top {
+        text-align: center;
+        font-size: 2rem;
+        background-color: #f1f8f6;
+        padding: 2rem 0;
+    }
+
+    &_middle {
+        display: flex;
+        justify-content: center;
+        background-color: #f1f8f6;
+
+        p {
+            padding: 2rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            
+            &::after {
+                content: "";
+                background: url(./images/star.png);
+                background-size: contain;
+                position: absolute;
+                width: 2rem;
+                height: 2rem;
+                
+            }
+        }
+        
+    }
+    &_bottom {
+        background-color: #d4e9e2;
+        padding: 1.5rem 0;
+
+        .reward1,
+        .reward2,
+        .reward3,
+        .reward4,
+        .reward5 {
+            display: none;
+        }
+
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            width: 35vw;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+
+            img {
+                width: 25rem;
+            }
+            h4 {
+                font-size: 1.3rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}

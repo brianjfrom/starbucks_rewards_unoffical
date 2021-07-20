@@ -1,0 +1,42 @@
+.socialMedia {
+    margin: 0 auto;
+    width: 70vw;
+    font-family: 'nurito sans', sans-serif;
+    border-top: 3px inset rgba(0, 0, 0, 0.2);
+
+    .icons {
+        font-size: 2rem;
+        padding: 2.5rem 0;
+        
+        i {
+            padding: 0 1rem 0 0;
+        }
+    }
+    .misc {
+        display: flex;
+        justify-content: start;
+        a {
+            // flex: 1;
+            color: #000;
+            // padding: 0 0.9rem 0.25rem ;
+            font-size: 1.2rem;
+
+            &:not(:first-of-type) {
+                padding: 0 1rem;
+            }
+
+            &:first-of-type {
+                padding-right: 1rem;
+            }
+
+            &:not(:last-of-type) {
+                border-right: 1px solid #000;
+            }
+        }
+    }
+    .copy {
+       padding: 2rem 0;
+       color: rgba(0, 0, 0, 0.5); 
+       font-size: 0.9rem;
+    }
+}

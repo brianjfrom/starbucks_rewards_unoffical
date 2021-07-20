@@ -1,0 +1,50 @@
+.information {
+
+    .cover {
+        padding: 2rem 0;
+        border-bottom: 3px inset rgba(0, 0, 0, 0.1);
+    }
+    &_group {
+        display: flex;
+        padding: 3rem 15vw;
+        gap: 3rem;
+        // border-bottom: 3px inset rgba(0, 0, 0, 0.2);
+        
+        
+
+        > * {
+            flex: 1;
+        }
+        
+        > div * {
+            padding-bottom: 1rem;
+
+        }
+    }
+    .about,
+    .career,
+    .socialImpact,
+    .partners,
+    .orders {
+
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 1.3rem;
+            padding-bottom: 2.5rem;
+        }
+        
+        a {
+            color: rgba(0, 0, 0, 0.7);
+            font-size: 1.1rem;
+            padding: .75rem 0;
+        }
+    }
+    &::after {
+        content: "";
+        width: 80%;
+        height: 3px;
+        color: black;
+    }
+}

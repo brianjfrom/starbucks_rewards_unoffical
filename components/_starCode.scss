@@ -1,0 +1,63 @@
+.starCode {
+    margin: 0 auto;
+    width: 40vw;
+    font-family: 'nunito sans', sans-serif;
+
+    &_header {
+        margin: 3rem 0 1rem;
+        font-size: 1.3rem;
+
+        p {
+            padding-top: 1.5rem;
+            font-size: 1.1rem;
+        }
+    }
+    &_enter {
+        display: inline;
+        width: 100%;
+
+        fieldset {
+            margin-top: 0.5rem;
+            height: 3rem;
+            border-radius: .75rem;
+            display: flex;
+        }
+
+
+        input {
+            position: relative;
+            left: 2rem;
+            top: 5%;
+            height: 90%;
+            width: 85%;
+            border: hidden;
+
+            &:focus-visible {
+                border: hidden;
+                outline: 0px none transparent !important; 
+            }
+        }
+        button {
+            margin-top: 0.5rem;
+            margin-left: 85%;
+            padding: .5rem 1rem;
+            border-radius: 1.5rem;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+    }
+    &_noCode,
+    &_questions {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+
+        a {
+            color: #008248;
+            text-decoration: underline;
+        }
+        p:last-of-type {
+            padding-top: 1rem;
+        }
+    }
+
+}

@@ -6,7 +6,7 @@
         @media screen and (max-width: 950px) {@content};
     }
     @if $breakpoint == tab-land {
-        @media screen and (max-width: 1400px) {@content};
+        @media screen and (max-width: 1500px) {@content};
     }
     @if $breakpoint == big-desktop {
         @media screen and (min-width: 1800px) {
