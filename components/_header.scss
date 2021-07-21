@@ -3,12 +3,13 @@
 $header-fontsize: 1.1rem;
 
 header {
+    position: sticky;
     display: grid;
     grid-template-columns: 4rem 2rem repeat(4, 1fr) 4rem;
     grid-template-rows: 4rem 3rem;
-    // padding: 2rem 0 3rem 0;
+    top: 0;
+    background-color: #fff;
     margin: 2rem 0 0 0;
-    // position: fixed;
     z-index: 10;
 
     .logo {
@@ -30,14 +31,6 @@ header {
         align-items: center;
         padding-left: 0.5rem;
 
-        // .rewards {
-        //     // border-bottom: 5px solid blue;
-        //     // transform: translateY(1rem);
-
-        //     &::after {
-        //         border: 15px solid blue;
-        //     }
-        // }
         
         p {
             padding: 0 .5rem;
@@ -77,6 +70,7 @@ header {
         }
         .sign_in {
             background-color: #fff;
+            cursor: pointer;
             
 
             &:hover {
@@ -87,6 +81,7 @@ header {
         .join_now {
             background-color: #000;
             color: #fff;
+            cursor: pointer;
 
             &:hover {
                 opacity: .8;
@@ -94,6 +89,17 @@ header {
         }
 
     }
+    .phone_icon {
+        grid-column: 7/8;
+
+        .hidden_icon {
+            font-size: 3.5rem;
+            display: none; 
+            justify-content: start;
+            
+        }
+    }
+    
     .nav-bottom {
         grid-row: 2;
         background-color: #1e3932;

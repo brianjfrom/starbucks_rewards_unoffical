@@ -1,7 +1,82 @@
+
 .favorites {
-    @include responsive(tab-land) {
+    @include responsive(tab-first-break) {
         &_bottom .flex {
             width: 60vw;
         }
+    }
+}
+
+header {
+   @include responsive(tab-land) {
+       .nav-right {
+           grid-column: 5/8;
+           justify-content: flex-end;
+           padding-right: 2rem;
+       }
+   } 
+}
+
+@include responsive(tab-land) {
+    .payment {
+        &_area1,
+        &_area2,
+        &_area3 {
+            width: 80vw;
+        }
+    }
+}
+
+@include responsive (tab-port) {
+    .hero {
+        background-position: right bottom;
+    }
+    .favorites_bottom .flex {
+        width: 100vw;
+    }
+    .getting_started_bottom {
+        width: 100vw;
+    }
+    .extra_hero {
+        width: 100vw;
+    }
+    .payment {
+        &_area1,
+        &_area2,
+        &_area3 {
+            width: 95vw;
+        }
+    }
+    .starCode {
+        width: 60vw; 
+    }
+    .finePrint {
+        padding: 3rem 2rem;
+    }
+    .information {
+        &_group {
+            padding: 3rem 2rem;
+            gap: 1.5rem;
+        }
+    }
+    .socialMedia {
+        width: 90vw;
+    }
+}
+
+@include responsive (phone) {
+    header {
+    margin: 0;
+    top: -70px;
+        .nav-info,
+        .nav-right {
+            display: none;
+        }
+        .phone_icon {
+            .hidden_icon {
+                display: flex;
+            }
+        }
+        
     }
 }

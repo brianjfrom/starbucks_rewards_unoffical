@@ -3,12 +3,17 @@
 .hero {
     margin: 0;
     position: relative;
-    background-color: #d4e9e2;
     height: 77vh;
     padding-left: 8rem; 
     display: flex;
     align-items: center;
     overflow: hidden;
+    background-image: url(/images/hero-star1.png);
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #d4e9e2;
+
 
     .free-coffee {
         display: flex;
@@ -34,6 +39,7 @@
             color: #fff;
             font-weight: 700;
             font-size: 1rem;
+            cursor: pointer;
         }
 
         .join-app {
@@ -45,100 +51,5 @@
         }
 
     }
-    .star {
-      
-      .star1 {
-        height: 25%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 19.2rem;
-        top: 20.5rem;
-        z-index: 10;
-      }
-      .star2 {
-        height: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 16.7rem;
-        top: 17.9rem;
-        z-index: 9;
-      }
-      .star3 {
-        height: 45%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 14.2rem;
-        top: 15.1rem;
-        z-index: 8;
-      }
-      .star4 {
-        height: 55%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 11.5rem;
-        top: 12.5rem;
-        z-index: 7;
-      }
-      .star5 {
-        height: 67%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 8.5rem;
-        top: 9.4rem;
-        z-index: 6;
-      }
-      .star6 {
-        height: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 5.4rem;
-        top: 6rem;
-        z-index: 5;
-      }
-      .star7 {
-        height: 93%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: 2rem;
-        top: 2.4rem;
-        z-index: 4;
-      }
-      .star8 {
-        height: 107%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: -1.5rem;
-        top: -1.3rem;
-        z-index: 3;
-        overflow: hidden;
-      }
-      .star9 {
-        height: 120%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        right: -4.8rem;
-        top: -4.8rem;
-        z-index: 2;
-        
-      }
-
-    }
+    
 }

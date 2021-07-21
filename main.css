@@ -15,9 +15,12 @@
 }
 
 header {
+  position: sticky;
   display: grid;
   grid-template-columns: 4rem 2rem repeat(4, 1fr) 4rem;
   grid-template-rows: 4rem 3rem;
+  top: 0;
+  background-color: #fff;
   margin: 2rem 0 0 0;
   z-index: 10;
 }
@@ -81,6 +84,7 @@ header .nav-right p {
 
 header .nav-right .sign_in {
   background-color: #fff;
+  cursor: pointer;
 }
 
 header .nav-right .sign_in:hover {
@@ -90,10 +94,21 @@ header .nav-right .sign_in:hover {
 header .nav-right .join_now {
   background-color: #000;
   color: #fff;
+  cursor: pointer;
 }
 
 header .nav-right .join_now:hover {
   opacity: .8;
+}
+
+header .phone_icon {
+  grid-column: 7/8;
+}
+
+header .phone_icon .hidden_icon {
+  font-size: 3.5rem;
+  display: none;
+  justify-content: start;
 }
 
 header .nav-bottom {
@@ -133,12 +148,16 @@ header .bottom-nav p {
 .hero {
   margin: 0;
   position: relative;
-  background-color: #d4e9e2;
   height: 77vh;
   padding-left: 8rem;
   display: flex;
   align-items: center;
   overflow: hidden;
+  background-image: url(/images/hero-star1.png);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-color: #d4e9e2;
 }
 
 .hero .free-coffee {
@@ -166,111 +185,12 @@ header .bottom-nav p {
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .hero .free-coffee .join-app a {
   color: black;
   text-decoration: underline;
-}
-
-.hero .star .star1 {
-  height: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 19.2rem;
-  top: 20.5rem;
-  z-index: 10;
-}
-
-.hero .star .star2 {
-  height: 35%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 16.7rem;
-  top: 17.9rem;
-  z-index: 9;
-}
-
-.hero .star .star3 {
-  height: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 14.2rem;
-  top: 15.1rem;
-  z-index: 8;
-}
-
-.hero .star .star4 {
-  height: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 11.5rem;
-  top: 12.5rem;
-  z-index: 7;
-}
-
-.hero .star .star5 {
-  height: 67%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 8.5rem;
-  top: 9.4rem;
-  z-index: 6;
-}
-
-.hero .star .star6 {
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 5.4rem;
-  top: 6rem;
-  z-index: 5;
-}
-
-.hero .star .star7 {
-  height: 93%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: 2rem;
-  top: 2.4rem;
-  z-index: 4;
-}
-
-.hero .star .star8 {
-  height: 107%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: -1.5rem;
-  top: -1.3rem;
-  z-index: 3;
-  overflow: hidden;
-}
-
-.hero .star .star9 {
-  height: 120%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  right: -4.8rem;
-  top: -4.8rem;
-  z-index: 2;
 }
 
 .getting_started {
@@ -730,5 +650,64 @@ header .bottom-nav p {
 @media screen and (max-width: 1500px) {
   .favorites_bottom .flex {
     width: 60vw;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header .nav-right {
+    grid-column: 5/8;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .payment_area1, .payment_area2, .payment_area3 {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-position: right bottom;
+  }
+  .favorites_bottom .flex {
+    width: 100vw;
+  }
+  .getting_started_bottom {
+    width: 100vw;
+  }
+  .extra_hero {
+    width: 100vw;
+  }
+  .payment_area1, .payment_area2, .payment_area3 {
+    width: 95vw;
+  }
+  .starCode {
+    width: 60vw;
+  }
+  .finePrint {
+    padding: 3rem 2rem;
+  }
+  .information_group {
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+  }
+  .socialMedia {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  header {
+    margin: 0;
+    top: -70px;
+  }
+  header .nav-info,
+  header .nav-right {
+    display: none;
+  }
+  header .phone_icon .hidden_icon {
+    display: flex;
   }
 }
