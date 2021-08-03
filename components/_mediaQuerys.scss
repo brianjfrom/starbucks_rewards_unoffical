@@ -77,6 +77,219 @@ header {
                 display: flex;
             }
         }
+        .bottom-nav {
+            grid-column: 1 / 6;
+        }
+        .first-toggle {
+            z-index: 1;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 250ms ease-in-out;
+            opacity: 0;
+            // transition: opacity 50ms linear 50ms;
+        }
+
+        .nav-toggle {
+            transform: scale(1, 1);
+            transition: transform 250ms linear;
+            opacity: 1;
+        }
+
+        .second-toggle {
+            z-index: 5;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 250ms ease-in-out;
+        }
+
+        .toggle {
+            transform: scale(1, 1);
+            transition: transform 250ms linear;
+        }
         
+    }
+    .hero {
+        background-position: right bottom;
+        padding-left: 1rem;
+        align-items: start;
+    }
+    .getting_started_bottom {
+        display: none;
+    }
+    .getting_started_bottom_reactive {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        font-size: 1.2rem;
+
+        .float_number {
+            float: left;
+            font-size: 2rem;
+            padding: .5rem 1rem;
+            border: 1px solid #008248;
+            border-radius: 50%;
+            margin: 1rem;
+        }
+
+        h4 {
+            margin-top: 1rem;
+        }
+        a {
+            text-decoration: underline;
+            color: #008248;
+        }
+    }
+    .favorites_bottom .flex {
+        flex-direction: column;
+        text-align: center;
+
+        h4,
+        p {
+            font-size: 1.2rem;
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+    .extra_hero {
+        flex-direction: column;
+        justify-content: start;
+        text-align: left;
+        margin: 0 auto;
+        width: 90%;
+
+        img {
+            float: left;
+            margin-right: 1rem;
+        }
+        p, a {
+            font-size: 1rem;
+        }
+    }
+    .payment {
+
+        &_area1,
+        &_area2,
+        &_area3 {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 90%;
+
+            // .block1,
+            .block2,
+            .block3 {
+                display: flow-root;
+                flex-direction: column;
+                padding-top: 2rem;
+
+                img {
+                    float: left;
+                    
+                }
+            }
+        }
+    }
+    .starCode {
+        width: 80vw;
+    }
+    .finePrint_group {
+        flex-direction: column;
+    }   
+    .information {
+        &_group {
+            flex-direction: column;
+
+            p {
+                cursor: pointer;
+            } 
+            a {
+                position: absolute;
+                transform: scale(1, 0);
+                transform-origin: top;
+                transition: transform 500ms ease-in-out;
+                opacity: 0;
+                transition: opacity 500ms linear;
+            }
+        }
+        .carrot-icon {
+            display: block;
+        }
+    }
+
+    .information {
+
+        .info-res {
+            // display: block;
+           
+            
+            a {
+                // display: block;
+                position: relative;
+                transform: scale(1, 1);
+                transition: transform 250ms linear;
+                opacity: 1;
+            }
+        }
+        
+    }
+    .socialMedia {
+        .misc {
+            flex-direction: column;
+            
+            a {
+                padding: 0;
+                
+                &:first-of-type {
+                    padding: 0;
+                }
+                &:not(:first-of-type) {
+                    padding: 0;
+                }
+                &:not(:last-of-type) {
+                    border: none;
+                }
+            }
+
+        }
+    }
+
+}
+@include responsive (phone-sm) {
+    header {
+        .bottom-nav {
+            grid-column: 1 / 7;
+        }
+    }
+    .hero {
+        justify-content: center;
+        background-size: 40rem;
+        background-position: right bottom;
+        text-align: center;
+
+        .join_now_2 {
+            all: unset;
+            margin: 0 auto;
+        }
+    }
+    .starCode {
+        button {
+            margin-left: 60%;
+        }
+    }
+    .favorites_middle p {
+        padding: 1rem;
+        font-size: 1.3rem;
+
+        &::after {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+    }
+    .favorites_bottom .flex img {
+        width: 15rem;
+    }
+    .socialMedia .icons i {
+         padding-right: 0.5rem;
     }
 }

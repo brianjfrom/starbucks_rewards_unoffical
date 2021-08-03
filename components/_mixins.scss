@@ -1,6 +1,9 @@
 @mixin responsive($breakpoint) {
+    @if $breakpoint == phone-sm {
+        @media screen and (max-width: 500px) { @content};
+    }
     @if $breakpoint == phone {
-        @media screen and (max-width: 830px){@content};
+        @media screen and (max-width: 850px) {@content};
     }
     @if $breakpoint == tab-port {
         @media screen and (max-width: 1024px) {@content};
