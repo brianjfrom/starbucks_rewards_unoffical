@@ -285,7 +285,7 @@ header .bottom-nav p {
   display: flex;
   align-items: center;
   overflow: hidden;
-  background-image: url(/images/hero-star1.png);
+  background-image: url(./images/hero-star1.png);
   background-size: contain;
   background-position: right center;
   background-repeat: no-repeat;
@@ -559,7 +559,9 @@ header .bottom-nav p {
 .payment .block2,
 .payment .block3 {
   display: grid;
-  grid-template-areas: "icons head"             "icons info" "icons none";
+  grid-template-areas: "icons head"            
+ "icons info"
+ "icons none";
 }
 
 .payment .block2 img,
