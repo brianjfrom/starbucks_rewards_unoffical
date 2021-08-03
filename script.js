@@ -26,7 +26,7 @@ function value25() {
   document.querySelector('.reward5').style.display = "none";
 }
 function value50() {
-  document.querySelector('.value50').style.borderBottom = borderInfo;
+  document.querySelector('.value50').style.borderBottom = borderInfo
   document.querySelector('.value25').style.borderBottom = "none";
   document.querySelector('.value150').style.borderBottom = "none";
   document.querySelector('.value200').style.borderBottom = "none";
@@ -105,5 +105,70 @@ function inputInfo() {
     document.querySelector('.fieldset').style = "border-color: #008248";
     document.querySelector('.legend').style.color = "#008248";
     alert("Thank your for your Star Code");
+  }
+}
+
+function infoResA() {
+  const about = document.querySelector('.about');
+  if (about.className === "about") {
+    about.className += " info-res";
+  } else {
+    about.className = "about";
+  }
+}
+
+function infoResC() {
+  const career = document.querySelector('.career');
+  if (career.className === "career") {
+    career.className += " info-res";
+  } else {
+    career.className = "career";
+  }
+}
+function infoResSI() {
+  const socialImpact = document.querySelector('.socialImpact');
+  if (socialImpact.className === "socialImpact") {
+    socialImpact.className += " info-res";
+  } else {
+    socialImpact.className = "socialImpact"
+  } 
+}
+function infoResP() {
+  const parters = document.querySelector('.partners');
+  if (parters.className === "partners") {
+    parters.className += " info-res";
+  } else {
+    parters.className = "partners"
+  }
+}
+function infoResO() {
+  const orders = document.querySelector('.orders');
+  if (orders.className === "orders") {
+    orders.className += " info-res";
+ } else {
+   orders.className = "orders"
+ }
+}
+
+function hamburgerToggle() {
+  const firstToggle = document.querySelector('.first-toggle') 
+  const secToggle = document.querySelector('.second-toggle');
+  if (firstToggle.className === "first-toggle") {
+    firstToggle.className += " nav-toggle";
+    firstToggle.style.display = "flex"
+  } else {
+    firstToggle.className = "first-toggle";
+    secToggle.className = "second-toggle"
+
+  }
+  
+}
+function secondToggle() {
+  const secToggle = document.querySelector('.second-toggle');
+  if (secToggle.className === "second-toggle"){
+    secToggle.className += " toggle";
+    secToggle.style.display = "flex";
+  } else {
+     secToggle.className = "second-toggle";
   }
 }
