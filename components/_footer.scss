@@ -1,0 +1,141 @@
+footer {
+    padding-top: 6rem;
+    .line {
+        padding-bottom: 1rem;
+        margin: 0 auto;
+        width: 90%;
+        background: repeating-linear-gradient(-45deg, rgba(0,0,0, .3) 1px, transparent 5px); // #000000 2%, transparent 3%);
+        background-size: 100% 12px;;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+    }
+    .section1  {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-cal;
+
+        p {
+            margin: 0;
+            font-size: 3.5rem;
+        }
+        a {
+            cursor: pointer;
+        }
+        .btn-foot {
+            cursor: pointer;
+            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 1);
+            background-color: #fff;
+            font-family: $font-cal;
+            padding: .5rem 2.7rem;
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
+        }
+    }
+    .line-reverse {
+        padding: 2rem;
+        margin: 0 auto;
+        width: 90%;
+        background: repeating-linear-gradient(45deg, rgba(0,0,0, 0.3) 1px, transparent 5px);
+        background-size: 100% 12px;
+        background-repeat: repeat-x;
+        background-position: 0 0;
+    }
+    .section2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        width: 90%;
+        grid-column-gap: 3rem;
+
+
+        .col-sec2 {
+            // border: 1px solid red;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 3rem 0;
+            background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+            animation: map 13s infinite normal ;
+            animation-timing-function: linear;
+            animation-play-state: paused;
+
+            &:hover {
+                animation-play-state: running;
+            }
+
+            i {
+                font-size: 2rem;
+                padding-bottom: 1rem;
+            }
+
+           p {
+               font-size: 1.1rem;
+               font-family: $font-mono;
+           }
+        }
+
+    }  
+    .section3 {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+        margin: 3rem auto;
+        width: 90%;
+        font-family: $font-mono;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+        background-position: 0 0, 0 100%, 0 0, 100% 0;
+        background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+        background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+        animation: map 13s infinite normal ;
+        animation-timing-function: linear;
+        animation-play-state: paused;
+
+        &:hover {
+            animation-play-state: running;
+        }
+
+        input {
+            width: 50rem;
+            padding: 0 3rem;
+        }
+
+    }
+    .section4 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3rem auto;
+        width: 90%;
+        font-size: 0.9rem;
+        font-family: $font-norm;
+        font-weight: bold;
+
+        .col-left {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            p, a {
+                padding-right: 3rem;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,174 +1,30 @@
-// https://www.frontendpractice.com/project/starbucks
-// https://www.starbucks.com/rewards
+// https://www.frontendpractice.com/project/canal-street-market 
+// https://canalstreet.market/ 
 
-let borderInfo = "0.25rem solid #008248"
-let val20 = (document.querySelector(".value25").onload = loadFunction());
-let rewards = (document.querySelector('.reward1').onload = rewardLoad())
+// const cl = console.log;
+// const firstPage = document.querySelector('.page-one');
+// let pageOne = document.querySelector(".pg1");
+// let pageTwoHead = document.querySelector(".pg2");
 
-function loadFunction() {
-  document.querySelector(".value25").style.borderBottom = borderInfo;
-}
+// function moveToPageTwo() { 
+//     let tlP2 = document.querySelector('.tl-pg2')
+//     let rtp2 = document.querySelector('.rot-pg2')
 
-function rewardLoad() {
-  document.querySelector('.reward1').style.display = "block";
-}
+//     if (pageOne.className === "pg1") {
+//         firstPage.className += " change-page-two";
+//         pageTwoHead.onclick = "";
+//         tlP2.remove();
+//         rtp2.remove();
+//         pageTwoHead.className += " page-two";
+//         pageTwoHead.style.cursor = "default";
+//     } 
 
-function value25() {
-  document.querySelector('.value25').style.borderBottom = borderInfo;
-  document.querySelector('.value50').style.borderBottom = 'none';
-  document.querySelector('.value150').style.borderBottom = 'none';
-  document.querySelector('.value200').style.borderBottom = 'none';
-  document.querySelector('.value400').style.borderBottom = 'none';
-  document.querySelector('.reward1').style.display = "block";
-  document.querySelector('.reward2').style.display = "none";
-  document.querySelector('.reward3').style.display = "none";
-  document.querySelector('.reward4').style.display = "none";
-  document.querySelector('.reward5').style.display = "none";
-}
-function value50() {
-  document.querySelector('.value50').style.borderBottom = borderInfo
-  document.querySelector('.value25').style.borderBottom = "none";
-  document.querySelector('.value150').style.borderBottom = "none";
-  document.querySelector('.value200').style.borderBottom = "none";
-  document.querySelector('.value400').style.borderBottom = "none";
-  document.querySelector('.reward2').style.display = "block";
-  document.querySelector('.reward1').style.display = "none";
-  document.querySelector('.reward5').style.display = "none";
-  document.querySelector('.reward3').style.display = "none";
-  document.querySelector('.reward4').style.display = "none";
-}
-function value150() {
-  document.querySelector('.value150').style.borderBottom = borderInfo;
-  document.querySelector('.value25').style.borderBottom = 'none';
-  document.querySelector('.value50').style.borderBottom = 'none';
-  document.querySelector('.value200').style.borderBottom = 'none';
-  document.querySelector('.value400').style.borderBottom = 'none';
-  document.querySelector('.reward3').style.display = "block";
-  document.querySelector('.reward1').style.display = "none";
-  document.querySelector('.reward2').style.display = "none";
-  document.querySelector('.reward4').style.display = "none";
-  document.querySelector('.reward5').style.display = "none";
+//     const changePageTwo = document.querySelector('.change-page-two');
 
-}
-function value200() {
-  document.querySelector('.value200').style.borderBottom = borderInfo;
-  document.querySelector('.value25').style.borderBottom = 'none';
-  document.querySelector('.value50').style.borderBottom = 'none';
-  document.querySelector('.value150').style.borderBottom = 'none';
-  document.querySelector('.value400').style.borderBottom = 'none';
-  document.querySelector('.reward4').style.display = "block";
-  document.querySelector('.reward1').style.display = "none";
-  document.querySelector('.reward2').style.display = "none";
-  document.querySelector('.reward3').style.display = "none";
-  document.querySelector('.reward5').style.display = "none";
-}
-function value400() {
-  document.querySelector('.value400').style.borderBottom = borderInfo;
-  document.querySelector('.value25').style.borderBottom = 'none';
-  document.querySelector('.value50').style.borderBottom = 'none';
-  document.querySelector('.value150').style.borderBottom = 'none';
-  document.querySelector('.value200').style.borderBottom = 'none';
-  document.querySelector('.reward5').style.display = "block";
-  document.querySelector('.reward1').style.display = "none";
-  document.querySelector('.reward2').style.display = "none";
-  document.querySelector('.reward3').style.display = "none";
-  document.querySelector('.reward4').style.display = "none";
-}
+//     document.querySelector('.change-page-two').onclick = function backToPageOne() {
+//         cl('hello');
+//         // firstPage.classList.remove("change-page-two")
+//     }
+// }
 
-function addText() {
-  document.querySelector('#text').placeholder = "";
 
-  let addBox = document.querySelector('.fieldset');
-  let newText = document.createElement("legend")
-  newText.classList.add('legend')
-  newText.innerHTML = "Enter Your Star Code";
-  
-  let leg = document.querySelector('.legend');
-  if (typeof(leg) != 'undefined' && leg != null) {
-    console.log("already exists")
-  }
-  else {
-    document.querySelector('.fieldset').appendChild(newText);
-    document.querySelector('.fieldset').style = "border-color: #008248";
-    newText.style = "color: #008248";
-  }
-}
-
-function inputInfo() {
-  let starCode = document.getElementById("text").value
-  console.log(starCode);
-
-  if (typeof starCode === "undefined" || starCode === null || starCode === "") {
-    document.querySelector('.fieldset').style = "border-color: red";
-    document.querySelector('.legend').style.color = "red"
-  } else {
-    document.querySelector('.fieldset').style = "border-color: #008248";
-    document.querySelector('.legend').style.color = "#008248";
-    alert("Thank your for your Star Code");
-  }
-}
-
-function infoResA() {
-  const about = document.querySelector('.about');
-  if (about.className === "about") {
-    about.className += " info-res";
-  } else {
-    about.className = "about";
-  }
-}
-
-function infoResC() {
-  const career = document.querySelector('.career');
-  if (career.className === "career") {
-    career.className += " info-res";
-  } else {
-    career.className = "career";
-  }
-}
-function infoResSI() {
-  const socialImpact = document.querySelector('.socialImpact');
-  if (socialImpact.className === "socialImpact") {
-    socialImpact.className += " info-res";
-  } else {
-    socialImpact.className = "socialImpact"
-  } 
-}
-function infoResP() {
-  const parters = document.querySelector('.partners');
-  if (parters.className === "partners") {
-    parters.className += " info-res";
-  } else {
-    parters.className = "partners"
-  }
-}
-function infoResO() {
-  const orders = document.querySelector('.orders');
-  if (orders.className === "orders") {
-    orders.className += " info-res";
- } else {
-   orders.className = "orders"
- }
-}
-
-function hamburgerToggle() {
-  const firstToggle = document.querySelector('.first-toggle') 
-  const secToggle = document.querySelector('.second-toggle');
-  if (firstToggle.className === "first-toggle") {
-    firstToggle.className += " nav-toggle";
-    firstToggle.style.display = "flex"
-  } else {
-    firstToggle.className = "first-toggle";
-    secToggle.className = "second-toggle"
-
-  }
-  
-}
-function secondToggle() {
-  const secToggle = document.querySelector('.second-toggle');
-  if (secToggle.className === "second-toggle"){
-    secToggle.className += " toggle";
-    secToggle.style.display = "flex";
-  } else {
-     secToggle.className = "second-toggle";
-  }
-}

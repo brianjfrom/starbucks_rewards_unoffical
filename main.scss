@@ -1,34 +1,139 @@
-@import './components/mixins';
-
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
-    text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
 
-.body {
+$font-cal: 'Bad Script', cursive;
+$font-norm: 'Nanum Gothic', sans-serif;
+$font-mono: 'Nanum Gothic Coding', monospace;
+$font-other: 'Playfair Display', serif;
+
+body,
+body a {
+    margin: 0;
+    padding: 0;
+    font-family: $font-other;
+    // font-size: 10px;
+    text-decoration: none;
+    color: #000;  
+}
+@import "./components/mixIns";
+@import "./components/footer";
+
+main {
+    display: grid;
+    grid-template-columns: auto repeat(3, 3vw);
+    grid-template-areas: 'pg1 pg2 pg3 pg4';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.4rem;
+
+    .page-one {
+        grid-area: pg1;
+        display: block;  
+    }
+    .page-two {
+        grid-area: pg2;
+    }
+    .page-three {
+        grid-area: pg3;
+    }
+    .page-four {
+        grid-area: pg4;
+    }
+
+}
+
+@import "./components/pageOne";
+
+.page-two {
+        display: grid;
+        background-color: cornflowerblue;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 500ms ease-in;  
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        // cursor: pointer;
         
+        
+        p {
+            justify-content: center;
+            position: absolute;
+            margin: 0;
+            top: 0;
+            right: 0;
+            transform: translateX(-15%);
+        }
+
+        .rotate {
+            position: absolute;
+            transform: rotate(90deg);
+            top: 0;
+            right: 0;
+    }
 }
 
+.page-three {
+    background-color: tomato;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    
+    
+    p {
+        justify-content: center;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        transform: translateX(-15%);
+    }
 
-@import './components/header';
-@import './components/hero';
-@import './components/started';
-@import './components/favorites';
-@import './components/extras';
-@import './components/payment';
-@import './components/starCode';
-@import './components/finePrint';
-@import './components/information';
-@import './components/socialMedia';
+    .rotate {
+        position: absolute;
+        transform: rotate(90deg);
+        top: 0;
+        right: 0;
+    }       
+}
 
+.page-four {
+    background-color: orange;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 500ms ease-in;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    
+    
+    p {
+        justify-content: center;
+        position: absolute;
+        margin: 0;
+        // top: 0;
+        right: 0;
+        transform: translateX(-15%);
+    }
 
-@import './components/mediaQuerys';
+    .rotate {
+        justify-content: center;
+        position: absolute;
+        right: -1.5vw;
+        transform: rotate(90deg);
+    }
+}

@@ -1,0 +1,214 @@
+.page-one {
+    .img-hero-pg1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 250ms ease-in;
+    }
+    .icon-one {
+        display: inline-flex;
+        position: fixed;
+        font-size: 1.5rem;
+        font-family: $font-other;
+        font-weight: bold;
+        margin-left: 1vw;
+        // margin-top:
+
+        p {
+            padding: .5rem 1rem;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+    }
+    &-head {
+        font-size: 3rem;
+        font-family: $font-cal;
+        padding: 15rem 30vw 11rem 5vw;
+        line-height: 1.5;
+    
+
+    }
+    &-paraOne {
+        font-size: 7.3rem;
+        padding-left: 3vw;
+        padding-right: 55vw;
+        
+    }
+    &-flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+        justify-content: space-around;
+        padding: 0 3rem;
+        
+
+        .col {
+            display: grid;
+            grid-template-rows: auto;
+
+            p {
+                font-family: $font-mono;
+                line-height: 1.4;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+    &-flexTwo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        align-items: center;
+        padding: 3.5rem 0;
+        font-size: 6rem;
+
+        
+
+        p:not(:nth-child(2)) {
+            color: #fff;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, 1),
+                        -1px -1px 0 rgba(0, 0, 0, 1),
+                        1px -1px 0 rgba(0, 0, 0, 1),
+                        -1px 1px 0 rgba(0, 0, 0, 1);
+        }
+    }
+    &-flexThree {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        text-align: center;
+        grid-gap: 3rem;
+        position: relative;
+        margin: 3rem 5rem;
+        background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%);
+
+        background-repeat: repeat-x, repeat-x; 
+        background-size: 40px 1px, 40px 1px;  //15px 4px, 15px 4px, 4px 15px, 4px 15px;
+        background-position: left top, right bottom; // left bottom, right top;
+        padding: 3rem 0 4rem 0;
+        animation: border-dance 30s infinite normal;
+        animation-timing-function: linear;
+
+        &::before {
+            content: "";
+            width: 100%;
+            position: absolute;
+            top: 10px;
+            margin: 0;
+            padding: 1rem;
+            background: linear-gradient(90deg, black 50%, transparent 50%), linear-gradient(90deg, black 50%, transparent 50%);
+            background-repeat: repeat-x, repeat-x; 
+            background-size: 40px 1px, 40px 1px;  
+            background-position: left right;
+            animation: border-dance-before 30s infinite normal;
+            animation-timing-function: linear;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            position: absolute;
+            bottom: 10px;
+            margin: 0;
+            padding: 1rem;
+            background: linear-gradient(90deg, black 50%, transparent 50%); //linear-gradient(90deg, black 50%, transparent 50%);
+            background-repeat: repeat-x;; 
+            background-size: 40px 1px, 40px 1px;  //15px 4px, 15px 4px, 4px 15px, 4px 15px;
+            background-position: right bottom;
+            animation: border-dance-after 30s infinite normal;
+            animation-timing-function: linear;
+        }
+
+
+
+        .event-dates {
+            padding: 0 3rem;
+        }
+    }
+    .see-all {
+        display: flex;
+        justify-content: center;
+        position: absolute;  
+        bottom: -25%; 
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        p {
+        // position: absolute;
+        padding: 1.5rem 4rem;
+        border: 1px solid #000;
+        background-color: #fff;
+        
+            &:hover {
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+    .directions {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3.7rem;
+        padding: 0 3.7rem;
+        margin: 10rem 0 0.9rem;
+        
+        
+        &-text {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            padding: 90px 30px;
+            background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+            animation: map 13s infinite normal ;
+            animation-timing-function: linear;
+            animation-play-state: paused;
+
+            &:hover {
+                animation-play-state: running;
+            }
+
+            p {
+                font-size: 3.7rem;
+                margin: 0 3rem;
+            }
+        }
+        &-map {
+            padding: 1px;
+            background-image: linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(90deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0), linear-gradient(180deg, #000 50%, transparent 0);
+            background-position: 0 0, 0 100%, 0 0, 100% 0;
+            background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+            background-size: 30px 1px, 30px 1px, 1px 30px, 1px 30px;
+            animation: map 13s infinite normal;
+            animation-timing-function: linear;
+            animation-play-state: paused;
+
+            &:hover {
+                animation-play-state: running;
+            }
+
+            &-img {
+                background-position: cover;
+                background-size: 50%;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+                    
+            }
+        }
+    }
+}

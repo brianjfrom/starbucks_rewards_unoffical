@@ -1,1 +1,2 @@
-# starbucks_rewards_unoffical
+# CanalStreetMarket-Unofficial
+Replication of Canal Street Market website.

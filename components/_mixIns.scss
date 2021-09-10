@@ -1,0 +1,33 @@
+@keyframes border-dance {
+    0% {
+      background-position: left top, right bottom; // 0px 150px, 216px 0px;
+    }
+    100% {
+      background-position: right top, left bottom; // 0px 0px, 216px 150px;
+    }
+}
+@keyframes border-dance-before {
+    0% {
+      background-position: left top, ; // 0px 150px, 216px 0px;
+    }
+    100% {
+      background-position: right top, ; // 0px 0px, 216px 150px;
+    }
+}
+@keyframes border-dance-after {
+    0% {
+      background-position: right bottom, ; // 0px 150px, 216px 0px;
+    }
+    100% {
+      background-position: left bottom, ; // 0px 0px, 216px 150px;
+    }
+}
+
+@keyframes map {
+    0% {
+        background-position: left top, right bottom, right top, left bottom;
+    }
+    100% {
+        background-position: right top, left bottom, right bottom, left top;
+    }
+} 
